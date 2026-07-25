@@ -1,0 +1,150 @@
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+/* Define the font family and link the files */
+@font-face {
+  font-family: 'Integral CF';
+  src: url('/fonts/integral-cf-bold.woff2') format('woff2'),
+       url('/fonts/integral-cf-bold.woff') format('woff');
+  font-weight: 700; /* Use 800 or 900 for Heavy/Ultra styles */
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--font-family);
+    font-size: 16px;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+input,
+textarea,
+select {
+    outline: none;
+    border: 1px solid var(--border-color);
+}
+
+
+
+
+
+/* Footer */
+footer {
+    background: #F0F0F0;
+    padding-top: 70px;
+}
+.footer-logo {
+    font-family: Integral CF;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 33.45px;
+    leading-trim: CAP_HEIGHT;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    margin-bottom: 25px;
+
+}
+.footer-text {
+    font-family: Satoshi;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 22px;
+    letter-spacing: 0px;
+    margin-bottom: 35px;
+    width: 248px;
+    color: rgba(0, 0, 0, 0.6);
+
+}
+.social-icons a {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #00000033;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    transition: .3s;
+}
+.social-icons a:hover {
+    background: #000;
+    color: #fff;
+}
+.footer-title {
+    font-family: Satoshi;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+    color: #000000;
+}
+.footer-links li {
+    font-family: Satoshi;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 19px;
+    letter-spacing: 0px;
+    margin-bottom: 20px;
+}
+.footer-links a {
+    color: #00000099;
+    text-decoration: none;
+    transition: .3s;
+}
+.footer-links a:hover {
+    color: #000;
+}
+.border-driver{
+    margin-top: 55px;
+}
+.payment-card {
+    background: #fff;
+    border-radius: 5.38px;
+    padding: 10px 12px 8px;        
+}
+
+@media (max-width: 992px) {
+}
+@media (max-width: 768px){
+}
+
+@media (max-width: 576px) {
+}
