@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"rel="stylesheet">
@@ -11,6 +12,315 @@
     <title>Home Page</title>
 </head>
 <body>
+    <style>
+      
+ 
+
+
+  .section-title{
+    font-family: Integral CF;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 48px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom:55px  !important;
+  }
+  .product-img{
+    border-radius:20px;
+    width: 100%;
+    height:298px ;
+    margin-bottom:12px;
+  }
+  .product-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+  .card-body h6{
+     font-family: Satoshi;
+font-weight: 700;
+font-style: Bold;
+font-size: 20px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+
+  }
+  .rating{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    font-size:12px;
+    margin-bottom:6px;
+  }
+  .fs-s{
+    font-size: 18px;
+  }
+  .fs-r{
+    font-family: Satoshi;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+
+  }
+  .fs-p{
+    font-family: Satoshi;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000000;
+
+  }
+  .fs-p-d{
+    font-family: Satoshi;
+font-weight: 700;
+font-style: Bold;
+font-size: 24px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+text-decoration: line-through;
+
+  }
+  .fs-p-d-p{
+    font-family: Satoshi;
+font-weight: 500;
+font-style: Medium;
+font-size: 12px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+padding: 6px 13px;
+
+  }
+  .btn-view{
+    padding: 15px 80px;
+    font-family: Satoshi;
+font-weight: 500;
+font-style: Medium;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+border-radius: 62px;
+border: 1px solid #0000001A;
+  }
+  .btn-view:hover{
+    background: #000000;
+    color: #ffffff;
+  }
+ 
+    </style>
+
+     <section class="products py-5">
+    <div class="container">
+        <h2 class="text-center fw-bold section-title">NEW ARRIVALS</h2>
+
+        <div class="row g-4">
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card border-0 bg-transparent">
+                    <div class="product-img">
+                        <img src="Img/e01f5d3cd9029bd465a4c7158689ab1619693014.png"
+                             class="card-img-top rounded-3"
+                             alt="Vertical Striped Shirt">
+                    </div>
+                    <div class="card-body px-0">
+                        <h6 class="fw-semibold mb-2">Vertical Striped Shirt</h6>
+                        <div class="d-flex align-items-center mb-2 rating">
+                            <span class="text-warning fs-s">★★★★★</span>
+                            <small class="ms-2 text-muted fs-r">5.0/5</small>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <span class="fw-bold fs-5 fs-p">$212</span>
+                            <span class="text-decoration-line-through text-secondary fs-p-d">$232</span>
+                            <span class="badge bg-danger-subtle text-danger fs-p-d-p">-20%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card border-0 bg-transparent">
+                    <div class="product-img">
+                        <img src="Img/57234b01d5fcac5632cf6823570ca2d1d53d7d73.png"
+                             class="card-img-top rounded-3"
+                             alt="Courage Graphic T-shirt">
+                    </div>
+                    <div class="card-body px-0">
+                        <h6 class="fw-semibold mb-2">Courage Graphic T-shirt</h6>
+
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="text-warning fs-s">★★★★☆</span>
+                            <small class="ms-2 text-muted fs-r">4.0/5</small>
+                        </div>
+
+                        <div class="fw-bold fs-5 fs-p">$145</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card border-0 bg-transparent">
+                    <div class="product-img">
+                        <img src="Img/89515d714a66d9ca1401101dee4cc689f8bb5ad2.png"
+                             class="card-img-top rounded-3"
+                             alt="Loose Fit Bermuda Shorts">
+                    </div>
+
+                    <div class="card-body px-0">
+                        <h6 class="fw-semibold mb-2">Loose Fit Bermuda Shorts</h6>
+
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="text-warning fs-s">★★★</span>
+                            <small class="ms-2 text-muted fs-r">3.0/5</small>
+                        </div>
+
+                        <div class="fw-bold fs-5 fs-p">$80</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card border-0 bg-transparent">
+                    <div class="product-img">
+                        <img src="Img/f180c76808e2ff8a46be56aa933f031aed3abe75.png"
+                             class="card-img-top rounded-3"
+                             alt="Faded Skinny Jeans">
+                    </div>
+                    <div class="card-body px-0">
+                        <h6 class="fw-semibold mb-2">Faded Skinny Jeans</h6>
+
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="text-warning fs-s">★★★★☆</span>
+                            <small class="ms-2 text-muted fs-r">4.5/5</small>
+                        </div>
+
+                        <div class="fw-bold fs-5 fs-p">$210</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <a href="#" class="btn-view">
+                View All
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<hr>
+
+<!-- TOP SELLING -->
+  <section class="products py-5">
+    <div class="container">
+        <h2 class="text-center fw-bold section-title">TOP SELLING</h2>
+
+        <div class="row g-4">
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card border-0 bg-transparent">
+                    <div class="product-img">
+                        <img src="Img/e01f5d3cd9029bd465a4c7158689ab1619693014.png"
+                             class="card-img-top rounded-3"
+                             alt="Vertical Striped Shirt">
+                    </div>
+                    <div class="card-body px-0">
+                        <h6 class="fw-semibold mb-2">Vertical Striped Shirt</h6>
+                        <div class="d-flex align-items-center mb-2 rating">
+                            <span class="text-warning fs-s">★★★★★</span>
+                            <small class="ms-2 text-muted fs-r">5.0/5</small>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <span class="fw-bold fs-5 fs-p">$212</span>
+                            <span class="text-decoration-line-through text-secondary fs-p-d">$232</span>
+                            <span class="badge bg-danger-subtle text-danger fs-p-d-p">-20%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card border-0 bg-transparent">
+                    <div class="product-img">
+                        <img src="Img/57234b01d5fcac5632cf6823570ca2d1d53d7d73.png"
+                             class="card-img-top rounded-3"
+                             alt="Courage Graphic T-shirt">
+                    </div>
+                    <div class="card-body px-0">
+                        <h6 class="fw-semibold mb-2">Courage Graphic T-shirt</h6>
+
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="text-warning fs-s">★★★★☆</span>
+                            <small class="ms-2 text-muted fs-r">4.0/5</small>
+                        </div>
+
+                        <div class="fw-bold fs-5 fs-p">$145</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card border-0 bg-transparent">
+                    <div class="product-img">
+                        <img src="Img/89515d714a66d9ca1401101dee4cc689f8bb5ad2.png"
+                             class="card-img-top rounded-3"
+                             alt="Loose Fit Bermuda Shorts">
+                    </div>
+
+                    <div class="card-body px-0">
+                        <h6 class="fw-semibold mb-2">Loose Fit Bermuda Shorts</h6>
+
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="text-warning fs-s">★★★</span>
+                            <small class="ms-2 text-muted fs-r">3.0/5</small>
+                        </div>
+
+                        <div class="fw-bold fs-5 fs-p">$80</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3">
+                <div class="card border-0 bg-transparent">
+                    <div class="product-img">
+                        <img src="Img/f180c76808e2ff8a46be56aa933f031aed3abe75.png"
+                             class="card-img-top rounded-3"
+                             alt="Faded Skinny Jeans">
+                    </div>
+                    <div class="card-body px-0">
+                        <h6 class="fw-semibold mb-2">Faded Skinny Jeans</h6>
+
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="text-warning fs-s">★★★★☆</span>
+                            <small class="ms-2 text-muted fs-r">4.5/5</small>
+                        </div>
+
+                        <div class="fw-bold fs-5 fs-p">$210</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <a href="#" class="btn-view">
+                View All
+            </a>
+        </div>
+
+    </div>
+</section>
+
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row gy-5">
