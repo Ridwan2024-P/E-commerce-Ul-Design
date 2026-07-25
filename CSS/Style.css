@@ -8,6 +8,24 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'Integral CF';
+  src: url('/fonts/IntegralCF-Bold.woff2') format('woff2'),
+       url('/fonts/IntegralCF-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+
+}
+@font-face {
+    font-family: "Integral CF";
+    src: url("../fonts/IntegralCF-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+ 
+
 
 * {
     margin: 0;
@@ -50,6 +68,74 @@ textarea,
 select {
     outline: none;
     border: 1px solid var(--border-color);
+}
+
+/* navbar */
+ @font-face {
+  font-family: 'Integral CF';
+  src: url('/fonts/IntegralCF-Bold.woff2') format('woff2'),
+       url('/fonts/IntegralCF-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+.navbar-brand{
+   font-family: Integral CF;
+font-weight: 700;
+font-style: Bold;
+font-size: 32px;
+leading-trim: CAP_HEIGHT;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+
+}     
+.nav-link{
+   font-family: Satoshi;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+
+.nav-link:hover{
+    color:#000;
+}
+
+.input-group{
+    border-radius:50px;
+    overflow:hidden;
+}
+.form-control::placeholder{
+    font-family: Satoshi;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+
+
+}
+
+.input-group-text,
+.form-control{
+    background:#f2f2f2;
+}
+
+.form-control:focus{
+    box-shadow:none;
+}
+
+i{
+    color:#000;
+}
+.fs-i{
+    font-size: 24px;
+    
 }
 
 /* Card */
@@ -205,7 +291,7 @@ footer {
 }
 .social-icons a:hover {
     background: #000;
-    color: #fff;
+    color: #fff !important;
 }
 .footer-title {
     font-family: Satoshi;
@@ -236,6 +322,7 @@ footer {
 }
 .footer-links a:hover {
     color: #000;
+    
 }
 .border-driver{
     margin-top: 55px;
