@@ -32,6 +32,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+ :root{
+            --black:#000000;
+            --white:#ffffff;
+        }
 body {
     font-family: var(--font-family);
     font-size: 16px;
@@ -69,6 +73,51 @@ select {
     outline: none;
     border: 1px solid var(--border-color);
 }
+/* announcement */
+.announce{
+            background: var(--black);
+            color: var(--white);
+            text-align: center;
+            font-size: 14px;
+            padding: 10px 50px;
+            position: relative;
+            font-family: Satoshi;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 14px;
+            leading-trim: NONE;
+            line-height: 100%;
+            letter-spacing: 0%;
+
+        }
+
+        .announce a{
+            color: var(--white);
+        
+            font-family: Satoshi;
+font-weight: 500;
+font-style: Medium;
+font-size: 14px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+text-decoration: underline;
+text-decoration-style: solid;
+text-decoration-offset: 0%;
+text-decoration-thickness: 0%;
+
+        }
+
+        .announce .close{
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--white);
+            font-size: 18px;
+            cursor: pointer;
+            user-select: none;
+        }
 
 /* navbar */
  @font-face {
