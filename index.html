@@ -6,8 +6,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://googleapis.com">
-<link rel="preconnect" href="https://gstatic.com" crossorigin>
-<link href="https://googleapis.com/css2?family=Syne:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Syne:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -435,12 +436,14 @@ vertical-align: middle;
 
                 <!-- Casual -->
                 <div class="col-12 col-lg-4">
-                    <div class="dress-card">
-                        <span>Casual</span>
-                        <img src="img/e1b774aba32d9a769caba77c08e107a9198dcd6d.png"
-                            class="img-fluid w-100"
-                            alt="Casual">
-                    </div>
+                    <div class="dress-card d-flex justify-content-between align-items-center">
+    <span>Casual</span>
+
+    <img src="img/e1b774aba32d9a769caba77c08e107a9198dcd6d.png"
+         class="dress-img"
+         alt="Casual">
+</div>
+                    
                 </div>
 
                 <!-- Formal -->
@@ -458,7 +461,7 @@ vertical-align: middle;
                     <div class="dress-card">
                         <span>Party</span>
                         <img src="img/aa19c69e82cd85a823c989c1c8631bd976e2cbfb.png"
-                            class="img-fluid w-100"
+                            class="img-fluid w-100 "
                             alt="Party">
                     </div>
                 </div>
@@ -479,7 +482,272 @@ vertical-align: middle;
 
     </div>
 </section>
-  <section>
+ 
+
+<!-- Card -->
+<section class="popular-food  position-relative">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-3 custom-container">
+            <div >
+                <h2 class="fw-bold text-uppercase fs-600x">
+                   OUR HAPPY CUSTOMERS
+                </h2>
+            </div>
+           <div class="d-flex gap-3">
+                <button class="side-bar prev-btn bg-transparent">
+                    <i class="bi bi-arrow-left"></i>
+                </button>
+
+                <button class="side-bar next-btn bg-transparent">
+                    <i class="bi bi-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Splide Slider -->
+        <section class="splide " id="foodSlider">
+            <div class="splide__track">
+                <ul class="splide__list">
+
+                    <li class="splide__slide">
+                        <div class="card cardd border h-100 ">
+                            <div class="food-card text-center">
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <div class="review-name">
+                                    <h1 class="fs-h1">Sarah M.</h1>
+                                    <div class="check-icon">
+                                        <i class="bi bi-check "></i>
+                                    </div>
+                                </div>
+                                
+                                <p class="text-start">
+                                    "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                     <li class="splide__slide">
+                        <div class="card cardd border h-100 ">
+                            <div class="food-card text-center">
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <div class="review-name">
+                                    <h1 class="fs-h1">Sarah M.</h1>
+                                    <div class="check-icon">
+                                        <i class="bi bi-check "></i>
+                                    </div>
+                                </div>
+                                
+                                <p class="text-start">
+                                    "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                     <li class="splide__slide">
+                        <div class="card cardd border h-100 ">
+                            <div class="food-card text-center">
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <div class="review-name">
+                                    <h1 class="fs-h1">Sarah M.</h1>
+                                    <div class="check-icon">
+                                        <i class="bi bi-check "></i>
+                                    </div>
+                                </div>
+                                
+                                <p class="text-start">
+                                    "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                      <li class="splide__slide">
+                        <div class="card cardd border h-100 ">
+                            <div class="food-card text-center">
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <div class="review-name">
+                                    <h1 class="fs-h1">Sarah M.</h1>
+                                    <div class="check-icon">
+                                        <i class="bi bi-check "></i>
+                                    </div>
+                                </div>
+                                
+                                <p class="text-start">
+                                    "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="splide__slide">
+                        <div class="card cardd border h-100 ">
+                            <div class="food-card text-center">
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <div class="review-name">
+                                    <h1 class="fs-h1">Sarah M.</h1>
+                                    <div class="check-icon">
+                                        <i class="bi bi-check "></i>
+                                    </div>
+                                </div>
+                                
+                                <p class="text-start">
+                                    "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="splide__slide">
+                        <div class="card cardd border h-100 ">
+                            <div class="food-card text-center">
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <div class="review-name">
+                                    <h1 class="fs-h1">Sarah M.</h1>
+                                    <div class="check-icon">
+                                        <i class="bi bi-check "></i>
+                                    </div>
+                                </div>
+                                
+                                <p class="text-start">
+                                    "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="splide__slide">
+                        <div class="card cardd border h-100 ">
+                            <div class="food-card text-center">
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <div class="review-name">
+                                    <h1 class="fs-h1">Sarah M.</h1>
+                                    <div class="check-icon">
+                                        <i class="bi bi-check "></i>
+                                    </div>
+                                </div>
+                                
+                                <p class="text-start">
+                                    "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+               
+            </div>
+        </section>
+    </div>
+</section>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+   const splide = new Splide("#foodSlider",{
+    perPage:3,
+    perMove:1,
+    gap:"20px",
+
+    arrows:false,
+    pagination:false,
+
+    
+
+    breakpoints:{
+        992:{
+            perPage:2,
+            padding:{
+                left:0,
+                right:"100px"
+            }
+        },
+
+        768:{
+            perPage:1,
+            gap:"16px",
+            padding:{
+                left:0,
+                right:"0px"
+            }
+        }
+    }
+});
+
+splide.mount();
+
+  // Desktop Previous
+document.querySelectorAll(".prev-btn").forEach(function(btn) {
+    btn.addEventListener("click", function() {
+        splide.go("<");
+    });
+});
+
+// Desktop Next
+document.querySelectorAll(".next-btn").forEach(function(btn) {
+    btn.addEventListener("click", function() {
+        splide.go(">");
+    });
+});
+
+// Mobile Previous
+document.querySelectorAll(".prev-mobile").forEach(function(btn) {
+    btn.addEventListener("click", function() {
+        splide.go("<");
+    });
+});
+
+// Mobile Next
+document.querySelectorAll(".next-mobile").forEach(function(btn) {
+    btn.addEventListener("click", function() {
+        splide.go(">");
+    });
+});
+
+});
+</script>
+
+
 
   <!-- newsletter -->
   <div class="newsletter-wrap container">
@@ -495,8 +763,13 @@ vertical-align: middle;
     </div>
   </div>
 <style>
-    .gy-5 {
+   .gy-5 {
     --bs-gutter-y: 10rem;
+}
+@media (max-width: 767.98px) {
+    .gy-5 {
+        --bs-gutter-y: 5rem;
+    }
 }
 </style>
     <!-- Footer -->
@@ -573,7 +846,7 @@ vertical-align: middle;
 </footer>
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>

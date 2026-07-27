@@ -203,8 +203,10 @@ i{
   .product-img{
     border-radius:20px;
     width: 100%;
+
     height:298px ;
     margin-bottom:12px;
+    gap: 10px;
   }
   .product-img img{
     width:100%;
@@ -293,7 +295,178 @@ border: 1px solid #0000001A;
     background: #000000;
     color: #ffffff;
   }
+ .fs-600x{
+        font-family: "Integral CF", sans-serif;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 48px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
 
+    }
+    .side-bar i{
+        font-size:24px;
+    }
+    .rating{
+         margin-bottom: 15px;
+    }
+    .rating i{
+        color: #FFC633;
+        font-size: 23px;
+       
+
+    }
+    .review-name{
+        display: flex;
+        gap: 4px;
+    }
+    .fs-h1{
+        font-family: Satoshi;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 20px;
+        leading-trim: CAP_HEIGHT;
+        line-height: 22px;
+        letter-spacing: 0%;
+        margin-bottom: 12px;
+
+    }
+    .check-icon {
+    width: 19.5px;
+    height: 19.5px;
+    background: #01AB31;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.check-icon i {
+    color: #fff;
+    font-size: 19px;
+    font-weight: bold;
+     margin-top: 2.5px;
+}
+    .food-card p{
+        font-family: Satoshi;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 22px;
+        letter-spacing: 0%;
+        color: rgba(0, 0, 0, 0.6);
+
+    }
+    .cardd {
+        padding: 28px 32px 50px;
+        border: 1px solid #0000001A ;
+        border-radius: 20px;
+    }
+     .popular-food{
+    overflow: hidden; 
+}
+.slider-overflow{
+    width: calc(100vw - ((100vw - 1320px) / 2));
+    overflow: hidden;
+}
+.splide{
+    overflow: visible;
+}
+
+.splide__track{
+    overflow: visible;
+}
+
+.splide__list{
+    overflow: visible;
+}
+
+.splide__slide{
+    transition: all .4s ease;
+}
+
+.splide__slide.is-visible{
+    filter: blur(0);
+}
+
+.splide__slide:not(.is-visible){
+    filter: blur(4px);
+}
+@media (max-width: 768px){
+     .fs-600x{
+        font-family: Integral CF;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 32px;
+        leading-trim: NONE;
+        line-height: 36px;
+        letter-spacing: 0%;
+        vertical-align: middle;
+
+
+
+    }
+
+    .slider-overflow{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .splide__slide:not(.is-visible){
+        filter: blur(0);
+    }
+
+    .splide__slide{
+        opacity: 1;
+    }
+} .popular-food{
+    overflow: hidden; 
+}
+.slider-overflow{
+    width: calc(100vw - ((100vw - 1320px) / 2));
+    overflow: hidden;
+}
+.splide{
+    overflow: visible;
+}
+
+.splide__track{
+    overflow: visible;
+}
+
+.splide__list{
+    overflow: visible;
+}
+
+.splide__slide{
+  
+}
+
+.splide__slide.is-visible{
+    filter: blur(0);
+}
+
+.splide__slide:not(.is-visible){
+    filter: blur(4px);
+}
+@media (max-width: 768px){
+
+    .slider-overflow{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .splide__slide:not(.is-visible){
+        filter: blur(0);
+    }
+
+    .splide__slide{
+        opacity: 1;
+    }
+}
 
 
 
