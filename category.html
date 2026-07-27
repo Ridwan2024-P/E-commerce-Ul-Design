@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="CSS/Style.css">
-    <title>Home Page</title>
+    <title>Category Page</title>
 </head>
 <body>
     
@@ -297,7 +297,7 @@
 
         </div>
         <div class="col-md-8">
-          <div class="d-flex justify-content-md-between align-items-center mb-4">
+          <div class="d-flex justify-content-md-between gap-3 align-items-center mb-4">
                 <h2 class="fw-bold Casual mb-0">Casual</h2>
 
                 <div class="d-flex align-items-center">
@@ -520,7 +520,7 @@ data-bs-target="#filterModal"
             </div>
         </div>
        <nav class="mt-4">
-    <div class="d-flex justify-content-between align-items-center">
+    <div class="d-flex flex-wrap justify-content-center justify-content-between align-items-center">
         <a href="#" class="btn  preview-btn">
             <i class="bi bi-arrow-left"></i> Previous
         </a>
@@ -531,17 +531,20 @@ data-bs-target="#filterModal"
             <li class="page-item">
                 <a class="page-link " href="#">2</a>
             </li>
-            <li class="page-item">
+            <li class="page-item d-none d-md-block">
                 <a class="page-link " href="#">3</a>
             </li>
             <li class="page-item disabled">
                 <span class="page-link border-0 bg-transparent">...</span>
             </li>
             <li class="page-item">
-                <a class="page-link " href="#">8</a>
+                <a class="page-link d-none d-md-block" href="#">8</a>
             </li>
             <li class="page-item">
                 <a class="page-link " href="#">9</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link " href="#">10</a>
             </li>
         </ul>
         <a href="#" class="btn preview-btn">
@@ -601,6 +604,18 @@ data-bs-target="#filterModal"
 .pagination .page-link:hover {
     background: #000000 !important;
     color: #ffffff;
+}
+@media(max-width:768px){
+     .preview-btn{
+        padding: 8px 10px;
+        font-family: Satoshi;
+        font-weight: 500;
+        font-size: 12px;
+        leading-trim: NONE;
+        line-height: 20px;
+        letter-spacing: 0%;
+
+     }
 }
 </style>
 
