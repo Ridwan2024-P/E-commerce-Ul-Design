@@ -537,3 +537,263 @@ line-height: 100%;
 letter-spacing: 0%;
 color: #000000;
   }
+
+  .oder-card{
+    border: 1px solid #0000001A;
+    border-radius: 20px;
+    padding: 20px 24px;
+
+   }
+  .fs-d-6{
+    font-family: Integral CF;
+font-weight: 700;
+font-style: Bold;
+font-size: 40px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+
+  }
+  .cart-card{
+    border: 1px solid #0000001A !important;
+  }
+  .cart-item{
+    display:flex;
+    gap:16px;
+    padding:20px 0;
+  
+  }
+  .cart-item:first-child{
+    padding-top:0;
+  }
+  .cart-item + .cart-item{
+    border-top:1px solid rgba(0, 0, 0,0.1);
+  }
+  .cart-item-img{
+    width:124px;
+    height:124px;
+    flex-shrink:0;
+    background: #F0F0F0;
+
+    border-radius:8.66px;
+    overflow:hidden;
+  }
+  .cart-item-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;}
+  .cart-item-main{
+    flex:1;
+    min-width:0;
+    display:flex;
+    flex-direction:column;}
+  .cart-item-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start
+    ;gap:8px;}
+  .cart-item-name{
+    font-family: Satoshi;
+font-weight: 700;
+font-style: Bold;
+font-size: 20px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+margin-bottom: 10px;
+
+  }
+  .cart-item-meta{
+    font-family: Satoshi;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+color: #000000;
+margin-bottom: 4px;
+
+}
+  .cart-item-meta b{font-family: Satoshi;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+color: rgba(0, 0, 0,0.6);
+}
+  .del-btn{
+    width:24px;
+    height:24px;
+    flex-shrink:0;
+    color:#FF3333;
+  background: transparent;}
+  .cart-item-bottom{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-top:auto;
+    padding-top:12px;}
+  .cart-item-price{
+    font-family: Satoshi;
+font-weight: 700;
+font-style: Bold;
+font-size: 24px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+
+  }
+  .qty-stepper{
+    display:flex;
+    align-items:center;
+    gap:14px;
+   background: #F0F0F0;
+
+    border-radius:62px;
+    padding:12px 14px;
+  }
+  .qty-stepper button{
+    width:20px
+    ;height:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:20px;line-height:1;
+  }
+  .qty-stepper span{
+    font-family: Satoshi;
+font-weight: 500;
+font-style: Medium;
+font-size: 14px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+
+    }
+
+   .summary-card{
+            border: 1px solid #0000001A !important;
+            border-radius: 20px;
+            padding: 20px 24px !important;
+          }
+
+  .summary-card h2{
+    font-family: Satoshi;
+font-weight: 700;
+font-style: Bold;
+font-size: 24px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+
+  }
+  .fs-s-400{
+    font-family: Satoshi;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+color: rgba(0, 0, 0,0.6);
+
+  }
+  .fs-p-7{
+    font-family: Satoshi;
+font-weight: 700;
+font-style: Bold;
+font-size: 20px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: right;
+vertical-align: middle;
+margin-bottom: 20px;
+
+  }
+  .fs-p-f{
+    font-family: Satoshi;
+font-weight: 700;
+font-style: Bold;
+font-size: 24px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: right;
+vertical-align: middle;
+margin-bottom: 24px;
+margin-top: 20px;
+
+  }
+
+.input-group,
+.apply-btn {
+    height: 48px;
+}
+.icon-h{
+  font-size: 24px;
+  color: rgba(0, 0, 0,0.4);
+
+}
+.form-control::placeholder{
+  font-family: Satoshi;
+font-weight: 400;
+font-style: Regular;
+font-size: 16px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+color: rgba(0, 0, 0,0.4);
+
+}
+
+  .apply-btn{
+    padding: 13px 38.5px 15px;
+    border-radius: 62px;
+
+    font-family: "Satoshi", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0;
+    background: #000000;
+    color: #ffff;
+
+
+    margin-bottom: 24px !important;
+
+  }
+  .checkout-btn {
+    width: 100%;
+    padding: 19px;
+    border-radius: 62px;
+    background: #000;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    font-family: "Satoshi", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+
+    margin-top: 24px;
+}
+
+.checkout-btn i {
+    font-size: 18px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+}
