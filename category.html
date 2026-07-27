@@ -113,114 +113,180 @@
   </div>
 
 </section>
+<style>
+    .filter-card{
+        padding: 20px 24px;
+        border: 1px solid #0000001A;
+        border-radius: 20px;
+    }
+    .filter-tittle{
+        font-family: Satoshi;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 20px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        margin-bottom: 24px;
+
+    }
+    .bi-sliders{
+        font-size: 24px;
+        color: #00000066;
+    }
+    .form-range::-webkit-slider-thumb{
+    background: #000;
+}
+
+.form-range::-webkit-slider-runnable-track{
+    background: #ddd;
+}
+
+.form-range{
+    accent-color: #000;
+}
+    .btn-size{
+            background: #F0F0F0;
+            color: rgba(0, 0, 0, 0.6);
+            border-radius: 62px;
+            padding: 10px 20px;
+
+        }
+        .btn-size:hover,.apply-filter:hover{
+            background: #000000;
+            color:#ffffff;
+        }
+        .apply-filter{
+            font-family: Satoshi;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 14px;
+            leading-trim: NONE;
+            line-height: 100%;
+            letter-spacing: 0%;
+            padding: 14.5px 87.5px;
+            background: #000000;
+            color:#ffffff;
+            border-radius: 62px;
+
+        }
+    
+</style>
 <!-- New Arrivals -->
     <div class="container">
         
          <div class="row g-4">
-        <div class="col-md-4">
-            <div class="card border-0 shadow-sm rounded-4 p-4">
+        <div class="col-md-4 d-none d-md-block">
+            <div class="card  filter-card ">
+            <div class="d-flex justify-content-between align-items-center">
+                <h4 class="filter-tittle ">Filters</h4>
+                <i class="bi bi-sliders"></i>
+            </div>
 
-    <!-- Header -->
-    <div class="d-flex justify-content-between align-items-center mb-4">
-        <h4 class="fw-bold mb-0">Filters</h4>
-        <i class="bi bi-sliders"></i>
-    </div>
-
+            <hr style="color: #00000066;">
+            <div class="d-flex flex-column gap-2 mb-3">
+                <a href="#" class="text-decoration-none  d-flex justify-content-between" style="color: #00000066;">
+                    <span>T-Shirts</span>
+                    <i class="bi bi-chevron-right" style="color: #00000066;"></i>
+                </a>
+                <a href="#" class="text-decoration-none  d-flex justify-content-between" style="color: #00000066;">
+                    <span>Shorts</span>
+                    <i class="bi bi-chevron-right" style="color: #00000066;"></i>
+                </a>
+                <a href="#" class="text-decoration-none  d-flex justify-content-between" style="color: #00000066;">
+                    <span>Shirts</span>
+                    <i class="bi bi-chevron-right" style="color: #00000066;"></i>
+                </a>
+                <a href="#" class="text-decoration-none  d-flex justify-content-between" style="color: #00000066;">
+                    <span>Hoodie</span>
+                    <i class="bi bi-chevron-right" style="color: #00000066;"></i>
+                </a>
+                <a href="#" class="text-decoration-none d-flex justify-content-between" style="color: #00000066;">
+                    <span>Jeans</span>
+                    <i class="bi bi-chevron-right" style="color: #00000066;"></i>
+                </a>
+            </div>
     <hr>
 
-    <!-- Categories -->
-    <h6 class="fw-bold mb-3">Categories</h6>
-
-    <div class="d-flex flex-column gap-2 mb-4">
-        <a href="#" class="text-decoration-none text-dark d-flex justify-content-between">
-            <span>T-Shirts</span>
-            <i class="bi bi-chevron-right"></i>
-        </a>
-
-        <a href="#" class="text-decoration-none text-dark d-flex justify-content-between">
-            <span>Shorts</span>
-            <i class="bi bi-chevron-right"></i>
-        </a>
-
-        <a href="#" class="text-decoration-none text-dark d-flex justify-content-between">
-            <span>Shirts</span>
-            <i class="bi bi-chevron-right"></i>
-        </a>
-
-        <a href="#" class="text-decoration-none text-dark d-flex justify-content-between">
-            <span>Hoodie</span>
-            <i class="bi bi-chevron-right"></i>
-        </a>
-
-        <a href="#" class="text-decoration-none text-dark d-flex justify-content-between">
-            <span>Jeans</span>
-            <i class="bi bi-chevron-right"></i>
-        </a>
-    </div>
-
-    <hr>
-
-    <!-- Price -->
-    <h6 class="fw-bold mb-3">Price</h6>
+            <div class="d-flex justify-content-between align-items-center">
+            <h4 class="filter-title ">Price</h4>
+            <i class="bi bi-chevron-up chevron-icon"></i>
+        </div>
 
     <input type="range" class="form-range mb-4" min="0" max="500">
 
-    <hr>
+   <hr style="color: #00000066;">
 
     <!-- Colors -->
-    <h6 class="fw-bold mb-3">Colors</h6>
+    <div class="d-flex justify-content-between align-items-center">
+            <h4 class="filter-title ">Colors</h4>
+            <i class="bi bi-chevron-up chevron-icon"></i>
+        </div>
 
     <div class="d-flex flex-wrap gap-2 mb-4">
-        <button class="btn rounded-circle p-3 bg-success border"></button>
-        <button class="btn rounded-circle p-3 bg-danger border"></button>
-        <button class="btn rounded-circle p-3 bg-warning border"></button>
-        <button class="btn rounded-circle p-3 bg-primary border"></button>
-        <button class="btn rounded-circle p-3 bg-dark border"></button>
-        <button class="btn rounded-circle p-3 bg-secondary border"></button>
+        <button class="btn rounded-circle p-4 bg-success border"></button>
+        <button class="btn rounded-circle p-4 bg-danger border"></button>
+        <button class="btn rounded-circle p-4 bg-warning border"></button>
+        <button class="btn rounded-circle p-4 bg-primary border"></button>
+        <button class="btn rounded-circle p-4 bg-dark border"></button>
+        <button class="btn rounded-circle p-4 bg-secondary border"></button>
+        <button class="btn rounded-circle p-4 bg-success border"></button>
+        <button class="btn rounded-circle p-4 bg-danger border"></button>
+        <button class="btn rounded-circle p-4 bg-warning border"></button>
+        <button class="btn rounded-circle p-4 bg-primary border"></button>
+        <button class="btn rounded-circle p-4 bg-dark border"></button>
+        <button class="btn rounded-circle p-4 bg-secondary border"></button>
     </div>
 
-    <hr>
+  <hr style="color: #00000066;">
 
     <!-- Size -->
-    <h6 class="fw-bold mb-3">Size</h6>
+  <div class="d-flex justify-content-between align-items-center">
+            <h4 class="filter-title ">Size</h4>
+            <i class="bi bi-chevron-up chevron-icon"></i>
+        </div>
 
     <div class="d-flex flex-wrap gap-2 mb-4">
-        <button class="btn btn-light rounded-pill">XX-Small</button>
-        <button class="btn btn-light rounded-pill">X-Small</button>
-        <button class="btn btn-dark rounded-pill">Medium</button>
-        <button class="btn btn-light rounded-pill">Large</button>
-        <button class="btn btn-light rounded-pill">X-Large</button>
+        <button class="btn btn-size ">XX-Small</button>
+        <button class="btn btn-size">X-Small</button>
+        <button class="btn btn-size">Medium</button>
+        <button class="btn btn-size">Large</button>
+        <button class="btn btn-size">X-Large</button>
     </div>
 
-    <hr>
+  <hr style="color: #00000066;">
 
     <!-- Dress Style -->
-    <h6 class="fw-bold mb-3">Dress Style</h6>
+   <div class="d-flex justify-content-between align-items-center">
+            <h4 class="filter-title ">Dress Style</h4>
+            <i class="bi bi-chevron-up chevron-icon"></i>
+        </div>
 
     <div class="d-flex flex-column gap-2 mb-4">
-        <a href="#" class="text-decoration-none text-dark d-flex justify-content-between">
-            <span>Casual</span>
-            <i class="bi bi-chevron-right"></i>
+        <a href="#" class="text-decoration-none text-dark d-flex justify-content-between" style="color: #00000066;">
+            <span style="color: #00000066;">Casual</span>
+            <i class="bi bi-chevron-right" style="color: #00000066;"></i>
+        </a>
+
+        <a href="#" class="text-decoration-none text-dark d-flex justify-content-between" style="color: #00000066;">
+            <span style="color: #00000066;">Formal</span>
+            <i class="bi bi-chevron-right" style="color: #00000066;"></i>
         </a>
 
         <a href="#" class="text-decoration-none text-dark d-flex justify-content-between">
-            <span>Formal</span>
-            <i class="bi bi-chevron-right"></i>
+            <span style="color: #00000066;">Party</span>
+            <i class="bi bi-chevron-right" style="color: #00000066;"></i>
         </a>
 
         <a href="#" class="text-decoration-none text-dark d-flex justify-content-between">
-            <span>Party</span>
-            <i class="bi bi-chevron-right"></i>
-        </a>
-
-        <a href="#" class="text-decoration-none text-dark d-flex justify-content-between">
-            <span>Gym</span>
-            <i class="bi bi-chevron-right"></i>
+            <span style="color: #00000066;">Gym</span>
+            <i class="bi bi-chevron-right" style="color: #00000066;"></i>
         </a>
     </div>
 
     <!-- Apply Button -->
-    <button class="btn btn-dark rounded-pill w-100 py-2">
+    <button class="btn apply-filter">
         Apply Filter
     </button>
 
@@ -445,7 +511,7 @@
         </div>
        <nav class="mt-4">
     <div class="d-flex justify-content-between align-items-center">
-        <a href="#" class="btn btn-outline-secondary  px-4">
+        <a href="#" class="btn  preview-btn">
             <i class="bi bi-arrow-left"></i> Previous
         </a>
         <ul class="pagination mb-0">
@@ -468,7 +534,7 @@
                 <a class="page-link " href="#">9</a>
             </li>
         </ul>
-        <a href="#" class="btn btn-outline-secondary  px-4">
+        <a href="#" class="btn preview-btn">
             Next <i class="bi bi-arrow-right"></i>
         </a>
 
@@ -483,6 +549,29 @@
 </section>
 
 <style>
+     .preview-btn{
+        border: 1px solid #0000001A;
+        background:#ffff;
+        color: #000000;
+        font-family: Satoshi;
+        font-weight: 500;
+        font-size: 14px;
+        leading-trim: NONE;
+        line-height: 20px;
+        letter-spacing: 0%;
+        padding: 8px 14px !important;
+
+
+     }
+     .preview-btn:hover,.preview-btn i:hover{
+        background: #000000;
+        color: #ffffff;
+     }
+  
+     .preview-btn:hover i{
+      
+        color: #ffffff;
+     }
     .pagination .page-link {
     width: 40px;
     height: 40px;
@@ -500,8 +589,8 @@
 }
 
 .pagination .page-link:hover {
-    background: #f2f2f2;
-    color: #000;
+    background: #000000 !important;
+    color: #ffffff;
 }
 </style>
 
