@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="CSS/Style.css">
-    <title>Home Page</title>
+    <title>Product Details Page</title>
 </head>
 <body>
 
@@ -95,7 +95,7 @@
         </nav>
     </div>
 </header>
-
+<!-- breadcrumb -->
 <div class="breadcrumb container">
     <a href="index.html">Home</a>
     <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#00000099" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -105,7 +105,302 @@
     <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#00000099" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     <span class="current">T-shirt</span>
   </div>
+<div class="container py-5">
+    <div class="row gy-4">
 
+        <!-- Gallery -->
+        <div class="col-lg-6">
+            <div class="row g-3">
+
+   
+                <div class="col-3 col-lg-3">
+                    <div class="d-flex flex-row flex-lg-column gap-2">
+
+                        <button class="btn  side-image">
+                            <img src="img/21d6bcec533545a2b1e10e90b8059bc1bc97eab5.png"
+                                class="img-fluid rounded-4" alt="">
+                        </button>
+
+                        <button class="btn  side-image">
+                            <img src="img/51c45a78b417beff6f8fa6310534f3755fd23c5a.png"
+                                class="img-fluid rounded-4" alt="">
+                        </button>
+
+                        <button class="btn   side-image">
+                            <img src="img/52ce3b469d8d7ff6e33f95a574450e07218fc909.png"
+                                class="img-fluid rounded-4" alt="">
+                        </button>
+
+                    </div>
+                </div>
+                <div class="col-9 col-lg-9 mt-4">
+                    <div class="main-image d-flex justify-content-center align-items-center ">
+                        <img src="img/21d6bcec533545a2b1e10e90b8059bc1bc97eab5.png"
+                            class="img-fluid" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <style>
+             .side-image{
+                width:152px ;
+                height: 167px;
+                border-radius: 20px;
+             }
+             .side-image img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                 border-radius: 20px !important;
+             }
+            .main-image {
+                width: 444px;
+                height: 500px;
+                
+                
+            }
+             .main-image img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                 border-radius: 20px !important;
+               
+             }
+             .product-tittle-d{
+                font-family: Integral CF;
+                font-weight: 700;
+                font-style: Bold;
+                font-size: 40px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+
+             }
+             .bi-star-fill,.bi-star-half{
+                font-size: 24px;
+                color: #ffc633 !important; ;
+             }
+             .text-secondary{
+                font-family: Satoshi;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 16px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+
+             }
+             .fs-p-p-d{
+                font-family: Satoshi;
+                font-weight: 700;
+                font-style: Bold;
+                font-size: 32px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+
+             }
+             .fs-p-d-d{
+                font-family: Satoshi;
+                font-weight: 700;
+                font-style: Bold;
+                font-size: 32px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                text-decoration: line-through;
+                color: #0000004D;
+
+
+             }
+             .p-d-d-p{
+                font-family: Satoshi;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 16px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: #FF3333;
+                background: #FF33331A;
+                border-radius: 62px;
+
+
+
+             }
+             .p-s-d{
+                font-family: Satoshi;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 16px;
+                leading-trim: CAP_HEIGHT;
+                line-height: 22px;
+                letter-spacing: 0%;
+                color: rgba(0, 0, 0, 0.6);
+
+             }
+             .product-sub-title{
+                font-family: Satoshi;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 16px;
+                leading-trim: CAP_HEIGHT;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: rgba(0, 0, 0, 0.6);
+
+             }
+             .p-add-card{
+                padding: 15px 157.5px;
+                font-family: Satoshi;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 16px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: #ffffff;
+                background: #000000;
+                border: 1px solid #000000;
+
+             }
+             .p-add-card:hover{
+                background: #ffffff;
+                color: #000000;
+             }
+             .in-btn{
+                background: #F0F0F0;
+
+             }
+        </style>
+
+        <!-- Product Info -->
+        <div class="col-lg-6">
+
+            <h1 class="product-tittle-d">
+                ONE LIFE GRAPHIC T-SHIRT
+            </h1>
+
+            <!-- Rating -->
+            <div class="d-flex align-items-center gap-2 mb-3">
+
+                <div class="text-warningg">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                </div>
+
+                <small class="text-secondary">4.5/5</small>
+
+            </div>
+
+            <!-- Price -->
+            <div class="d-flex align-items-center gap-3 mb-3">
+
+                <h2 class="fs-p-p-d">$260</h2>
+
+                <span class="fs-p-d-d">
+                    $300
+                </span>
+
+                <span class="badge p-d-d-p">
+                    -40%
+                </span>
+
+            </div>
+
+            <p class="p-s-d">
+                This graphic t-shirt is perfect for any occasion. Crafted from a
+                soft and breathable fabric, it offers superior comfort and style.
+            </p>
+
+            <hr>
+
+            <!-- Colors -->
+            <p class="product-sub-title">
+                Select Colors
+            </p>
+
+            <div class="d-flex gap-3 mb-4">
+
+                <button class="btn rounded-circle p-0 border border-2"
+                    style="width:40px;height:40px;background:#4a3728;">
+                </button>
+
+                <button class="btn rounded-circle p-0 border"
+                    style="width:40px;height:40px;background:#2b3a2f;">
+                </button>
+
+                <button class="btn rounded-circle p-0 border"
+                    style="width:40px;height:40px;background:#2b2c4a;">
+                </button>
+
+            </div>
+
+            <hr>
+
+            <!-- Size -->
+            <p class="product-sub-title">
+                Choose Size
+            </p>
+
+            <div class="d-flex flex-wrap gap-2 mb-4">
+
+                <button class="btn  rounded-pill px-4" style="background: #F0F0F0;">
+                    Small
+                </button>
+
+                <button class="btn  rounded-pill px-4" style="background: #F0F0F0;">
+                    Medium
+                </button>
+
+                <button class="btn btn-dark rounded-pill px-4" >
+                    Large
+                </button>
+
+                <button class="btnbtn-light rounded-pill px-4" style="background: #F0F0F0;">
+                    X-Large
+                </button>
+
+            </div>
+
+            <hr>
+
+            <!-- Quantity & Cart -->
+            <div class="d-flex gap-3">
+
+               <div class="input-group border rounded-pill overflow-hidden in-btn" style="max-width:170px; height:52px;">
+
+                    <button class="btn border-0 px-3 fs-4" type="button">
+                        −
+                    </button>
+
+                    <input type="text"
+                        class="form-control border-0 text-center shadow-none"
+                        value="1">
+
+                    <button class="btn border-0 px-3 fs-4" type="button">
+                        +
+                    </button>
+
+                </div>
+
+                <button class="btn border rounded-pill p-add-card">
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
 
 
 
