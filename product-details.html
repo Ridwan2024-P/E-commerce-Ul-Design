@@ -113,12 +113,12 @@
             <div class="row g-3">
 
    
-                <div class="col-3 col-lg-3">
+                <div class="col-12  order-2 order-lg-1 col-lg-3">
                     <div class="d-flex flex-row flex-lg-column gap-2">
 
                         <button class="btn  side-image">
                             <img src="img/21d6bcec533545a2b1e10e90b8059bc1bc97eab5.png"
-                                class="img-fluid rounded-4" alt="">
+                                class="img-fluid rounded-4 col-4" alt="">
                         </button>
 
                         <button class="btn  side-image">
@@ -133,7 +133,7 @@
 
                     </div>
                 </div>
-                <div class="col-9 col-lg-9 mt-4">
+                <div class="col-12  order-1 order-lg-2 col-lg-9 mt-4">
                     <div class="main-image d-flex justify-content-center align-items-center ">
                         <img src="img/21d6bcec533545a2b1e10e90b8059bc1bc97eab5.png"
                             class="img-fluid" alt="">
@@ -151,7 +151,7 @@
              .side-image img{
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
+                object-fit: contain;
                  border-radius: 20px !important;
              }
             .main-image {
@@ -276,6 +276,71 @@
                 background: #F0F0F0;
 
              }
+        
+@media (max-width: 768px) {
+
+    .side-image{
+        width: 100%;
+        height: 106px;
+    }
+
+    .main-image{
+        width: 100%;
+        height: 290px;
+    }
+
+    .product-tittle-d{
+        font-size: 32px;
+    }
+
+    .fs-p-p-d,
+    .fs-p-d-d{
+        font-size: 28px;
+    }
+
+    .p-add-card{
+        padding: 15px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 575.98px){
+
+    .side-image{
+        height: 106px;
+    }
+
+    .main-image{
+        width: 100%;
+        height: 290px;
+    }
+
+    .product-tittle-d{
+        font-size: 28px;
+    }
+
+    .bi-star-fill,
+    .bi-star-half{
+        font-size: 18px;
+    }
+
+    .text-secondary,
+    .product-sub-title,
+    .p-s-d{
+        font-size: 14px;
+    }
+
+    .fs-p-p-d,
+    .fs-p-d-d{
+        font-size: 24px;
+    }
+
+    .p-add-card{
+        width: 100%;
+        padding: 14px;
+        font-size: 15px;
+    }
+}
         </style>
 
         <!-- Product Info -->
