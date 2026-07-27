@@ -171,13 +171,16 @@
             border-radius: 62px;
 
         }
+        @media (max-width:764px){
+            
+        }
     
 </style>
 <!-- New Arrivals -->
     <div class="container">
         
          <div class="row g-4">
-        <div class="col-md-4 d-none d-md-block">
+        <div class="col-md-4  d-none d-md-block" >
             <div class="card  filter-card ">
             <div class="d-flex justify-content-between align-items-center">
                 <h4 class="filter-tittle ">Filters</h4>
@@ -294,15 +297,15 @@
 
         </div>
         <div class="col-md-8">
-          <div class="d-flex justify-content-between align-items-center mb-4">
+          <div class="d-flex justify-content-md-between align-items-center mb-4">
                 <h2 class="fw-bold Casual mb-0">Casual</h2>
 
-                <div class="d-flex align-items-center gap-3">
+                <div class="d-flex align-items-center">
                     <p class="mb-0 text-muted">
                         Showing 1-10 of 100 Products
                     </p>
 
-                    <div class="dropdown">
+                    <div class="dropdown  d-none d-md-block">
                         <button
                             class="btn btn-light dropdown-toggle border-0"
                             type="button"
@@ -318,6 +321,13 @@
                             <li><a class="dropdown-item" href="#">Price: High to Low</a></li>
                         </ul>
                     </div>
+                   <i class="bi bi-sliders fs-4 d-block d-md-none"
+                        role="button"
+                        data-bs-toggle="modal"
+data-bs-target="#filterModal"
+                        aria-expanded="false"
+                        aria-controls="filterSidebar">
+                    </i>
                 </div>
             </div>
             <div class="row border-bottom">
@@ -692,9 +702,111 @@
         </div>
 </footer>
 
+
+
+<div class="modal fade mt-5" id="filterModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-down">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h4 class="modal-title fw-bold">Filters</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="d-flex flex-column gap-2 mb-3">
+                    <a href="#" class="text-decoration-none d-flex justify-content-between text-secondary">
+                        <span>T-Shirts</span><i class="bi bi-chevron-right"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none d-flex justify-content-between text-secondary">
+                        <span>Shorts</span><i class="bi bi-chevron-right"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none d-flex justify-content-between text-secondary">
+                        <span>Shirts</span><i class="bi bi-chevron-right"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none d-flex justify-content-between text-secondary">
+                        <span>Hoodie</span><i class="bi bi-chevron-right"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none d-flex justify-content-between text-secondary">
+                        <span>Jeans</span><i class="bi bi-chevron-right"></i>
+                    </a>
+                </div>
+
+                <hr>
+
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5>Price</h5>
+                    <i class="bi bi-chevron-up"></i>
+                </div>
+
+                <input type="range" class="form-range mb-4" min="0" max="500">
+
+                <hr>
+
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5>Colors</h5>
+                    <i class="bi bi-chevron-up"></i>
+                </div>
+
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                    <button class="btn rounded-circle p-3 bg-success border"></button>
+                    <button class="btn rounded-circle p-3 bg-danger border"></button>
+                    <button class="btn rounded-circle p-3 bg-warning border"></button>
+                    <button class="btn rounded-circle p-3 bg-primary border"></button>
+                    <button class="btn rounded-circle p-3 bg-dark border"></button>
+                    <button class="btn rounded-circle p-3 bg-secondary border"></button>
+                </div>
+
+                <hr>
+
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5>Size</h5>
+                    <i class="bi bi-chevron-up"></i>
+                </div>
+
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                    <button class="btn btn-size">XX-Small</button>
+                    <button class="btn btn-size">X-Small</button>
+                    <button class="btn btn-size">Medium</button>
+                    <button class="btn btn-size">Large</button>
+                    <button class="btn btn-size">X-Large</button>
+                </div>
+
+                <hr>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5>Dress Style</h5>
+                    <i class="bi bi-chevron-up"></i>
+                </div>
+
+                <div class="d-flex flex-column gap-2 mb-4">
+                    <a href="#" class="text-decoration-none d-flex justify-content-between text-secondary">
+                        <span>Casual</span><i class="bi bi-chevron-right"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none d-flex justify-content-between text-secondary">
+                        <span>Formal</span><i class="bi bi-chevron-right"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none d-flex justify-content-between text-secondary">
+                        <span>Party</span><i class="bi bi-chevron-right"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none d-flex justify-content-between text-secondary">
+                        <span>Gym</span><i class="bi bi-chevron-right"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn apply-filter w-100">Apply Filter</button>
+            </div>
+
+        </div>
+    </div>
+</div>
     <script src="js/Script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    
 
 </body>
 
