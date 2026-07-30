@@ -187,6 +187,24 @@ i{
     
 }
 
+/* Hero Scetion */
+.hero-section{
+    background: #F2F0F1; 
+   position: relative;
+   top: -42px;
+   z-index: -99;
+}
+/* Phone View */
+
+@media (max-width: 768.98px) {
+
+    .hero-section {
+        top: 0;
+        z-index: auto;
+    }
+
+}
+
 /* Card */
 .section-title{
     font-family: Integral CF;
@@ -827,14 +845,14 @@ vertical-align: middle;
     ;gap:8px;}
   .cart-item-name{
     font-family: Satoshi;
-font-weight: 700;
-font-style: Bold;
-font-size: 20px;
-leading-trim: NONE;
-line-height: 100%;
-letter-spacing: 0%;
-vertical-align: middle;
-margin-bottom: 10px;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    margin-bottom: 10px;
 
   }
   .cart-item-meta{

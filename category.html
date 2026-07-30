@@ -532,7 +532,7 @@ data-bs-target="#filterModal"
                 <a class="page-link " href="#">2</a>
             </li>
             <li class="page-item d-none d-md-block">
-                <a class="page-link " href="#">3</a>
+                <a class="page-link d-none d-md-block " href="#">3</a>
             </li>
             <li class="page-item disabled">
                 <span class="page-link border-0 bg-transparent">...</span>
@@ -606,16 +606,24 @@ data-bs-target="#filterModal"
     color: #ffffff;
 }
 @media(max-width:768px){
-     .preview-btn{
-        padding: 8px 10px;
-        font-family: Satoshi;
-        font-weight: 500;
-        font-size: 12px;
-        leading-trim: NONE;
-        line-height: 20px;
-        letter-spacing: 0%;
+    
+        .pagination-wrapper {
+        flex-wrap: nowrap !important;
+        gap: 4px;
+    }
 
-     }
+    .preview-btn {
+        padding: 8px 8px !important;
+        font-size: 12px;
+    }
+
+    .pagination .page-link {
+        width: 32px;
+        height: 32px;
+        font-size: 12px;
+        margin: 0 1px;
+        padding: 0;
+    }
 }
 </style>
 
