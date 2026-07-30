@@ -423,66 +423,173 @@ vertical-align: middle;
 }
 </style>
  <!-- Browse by Dress Style -->
-<section class="py-5">
+<section class="dress-style-section py-5">
     <div class="container">
-
-        <div class="bg-light rounded-4 p-4 p-lg-5">
-
-            <h2 class="text-center fw-bold mb-5  fs-h2">
+        <div class="dress-style-wrapper">
+            <h2 class="text-center fs-h2 mb-5">
                 BROWSE BY DRESS STYLE
             </h2>
-
             <div class="row g-4">
-
-                <!-- Casual -->
-                <div class="col-12 col-lg-4">
-                    <div class="dress-card d-flex justify-content-between align-items-center">
-    <span>Casual</span>
-
-    <img src="img/e1b774aba32d9a769caba77c08e107a9198dcd6d.png"
-         class="dress-img"
-         alt="Casual">
-</div>
-                    
+                <div class="col-12 col-lg-5">
+                    <div class="dress-card  first-card">
+                        <h3>Casual</h3>
+                        <img src="img/e1b774aba32d9a769caba77c08e107a9198dcd6d.png"
+                            alt="Casual">
+                    </div>
                 </div>
+                <div class="col-12 col-lg-7">
+                    <div class="dress-card first-card">
+                        <h3>Formal</h3>
 
-                <!-- Formal -->
-                <div class="col-12 col-lg-8">
-                    <div class="dress-card">
-                        <span>Formal</span>
                         <img src="img/e46ed6ac8bdbe2c750dcc6e834bf1d98a4a73b29.png"
-                            class="img-fluid w-100"
                             alt="Formal">
                     </div>
                 </div>
+                <div class="col-12 col-lg-7">
+                    <div class="dress-card ">
+                        <h3>Party</h3>
 
-                <!-- Party -->
-                <div class="col-12 col-lg-8">
-                    <div class="dress-card">
-                        <span>Party</span>
                         <img src="img/aa19c69e82cd85a823c989c1c8631bd976e2cbfb.png"
-                            class="img-fluid w-100 "
                             alt="Party">
                     </div>
                 </div>
+                <div class="col-12 col-lg-5">
+                    <div class="dress-card first-card">
+                        <h3>Gym</h3>
 
-                <!-- Gym -->
-                <div class="col-12 col-lg-4">
-                    <div class="dress-card">
-                        <span>Gym</span>
                         <img src="img/fce658e0c17a220fe8bfb1126626f3ab58a761ec.png"
-                            class="img-fluid w-100"
                             alt="Gym">
                     </div>
                 </div>
-
             </div>
-
         </div>
-
     </div>
 </section>
- 
+<style>
+.dress-style-wrapper {
+    background-color: #f0f0f0;
+    border-radius: 40px;
+    padding: 70px 64px;
+}
+.fs-h2 {
+    font-family: "Archivo Black", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+}
+.dress-card {
+    position: relative;
+    height: 290px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.dress-card h3 {
+    position: absolute;
+    top: 28px;
+    left: 35px;
+    z-index: 2;
+
+    margin: 0;
+
+    font-family: "Satoshi", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+
+    color: #000;
+}
+.dress-card img {
+    position: absolute;
+    top: -150px;
+    right: 0;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
+}
+.dress-card.first-card img {
+    top: -100px;
+    left: 80px;
+    right: auto;
+    object-position: left center;
+}
+.dress-card:hover img {
+    transform: scale(1.05);
+}
+
+@media (max-width: 991.98px) {
+
+    .dress-style-wrapper {
+        padding: 45px 30px;
+        border-radius: 30px;
+    }
+    .fs-h2 {
+        font-size: 38px;
+    }
+    .dress-card {
+        height: 240px;
+    }
+    .dress-card img {
+        top: -110px;
+        height: 480px;
+    }
+    .dress-card.first-card img {
+        top: -80px;
+        left: 50px;
+        height: 450px;
+    }
+    .dress-card h3 {
+        top: 22px;
+        left: 25px;
+        font-size: 30px;
+    }
+}
+@media (max-width: 575.98px) {
+
+    .dress-style-wrapper {
+        padding: 30px 12px;
+        border-radius: 20px;
+    }
+    .fs-h2 {
+        margin-bottom: 25px;
+        font-size: 28px;
+        line-height: 1.15;
+    }
+    .dress-card {
+        height: 190px;
+        border-radius: 14px;
+    }
+    .dress-card h3 {
+        top: 16px;
+        left: 16px;
+        font-size: 23px;
+    }
+
+    .dress-card img {
+        top: -80px;
+        right: 0;
+
+        width: 100%;
+        height: 370px;
+
+        object-fit: cover;
+        object-position: center;
+    }
+    .dress-card.first-card img {
+        top: -45px;
+        left: 50px;
+        right: auto;
+
+        width: 100%;
+        height: 330px;
+
+        object-position: left center;
+    }
+}
+</style>
 
 <!-- Card -->
 <section class="popular-food  position-relative">

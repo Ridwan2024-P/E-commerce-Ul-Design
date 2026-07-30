@@ -1099,3 +1099,209 @@ color: rgba(0, 0, 0,0.4);
     }
 
 }
+
+
+
+
+
+
+
+/* Product Details */
+.side-image{
+                width:152px ;
+                height: 162px;
+                border-radius: 20px;
+             }
+             .side-image img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                 border-radius: 20px !important;
+             }
+            .main-image {
+                width: 444px;
+                height: 500px;
+                
+                
+            }
+             .main-image img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                 border-radius: 20px !important;
+               
+             }
+             .product-tittle-d{
+                font-family: Integral CF;
+                font-weight: 700;
+                font-style: Bold;
+                font-size: 40px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+
+             }
+             .bi-star-fill,.bi-star-half{
+                font-size: 24px;
+                color: #ffc633 !important; ;
+             }
+             .text-secondary{
+                font-family: Satoshi;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 16px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+
+             }
+             .fs-p-p-d{
+                font-family: Satoshi;
+                font-weight: 700;
+                font-style: Bold;
+                font-size: 32px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+
+             }
+             .fs-p-d-d{
+                font-family: Satoshi;
+                font-weight: 700;
+                font-style: Bold;
+                font-size: 32px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                vertical-align: middle;
+                text-decoration: line-through;
+                color: #0000004D;
+
+
+             }
+             .p-d-d-p{
+                font-family: Satoshi;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 16px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: #FF3333;
+                background: #FF33331A;
+                border-radius: 62px;
+
+
+
+             }
+             .p-s-d{
+                font-family: Satoshi;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 16px;
+                leading-trim: CAP_HEIGHT;
+                line-height: 22px;
+                letter-spacing: 0%;
+                color: rgba(0, 0, 0, 0.6);
+
+             }
+             .product-sub-title{
+                font-family: Satoshi;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 16px;
+                leading-trim: CAP_HEIGHT;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: rgba(0, 0, 0, 0.6);
+
+             }
+             .p-add-card{
+                padding: 15px 157.5px;
+                font-family: Satoshi;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 16px;
+                leading-trim: NONE;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: #ffffff;
+                background: #000000;
+                border: 1px solid #000000;
+
+             }
+             .p-add-card:hover{
+                background: #ffffff;
+                color: #000000;
+             }
+             .in-btn{
+                background: #F0F0F0;
+
+             }
+        
+@media (max-width: 768px) {
+
+    .side-image{
+        width: 100%;
+        height: 106px;
+    }
+
+    .main-image{
+        width: 100%;
+        height: 290px;
+    }
+
+    .product-tittle-d{
+        font-size: 32px;
+    }
+
+    .fs-p-p-d,
+    .fs-p-d-d{
+        font-size: 28px;
+    }
+
+    .p-add-card{
+        padding: 15px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 575.98px){
+
+    .side-image{
+        height: 106px;
+    }
+
+    .main-image{
+        width: 100%;
+        height: 290px;
+    }
+
+    .product-tittle-d{
+        font-size: 28px;
+    }
+
+    .bi-star-fill,
+    .bi-star-half{
+        font-size: 18px;
+    }
+
+    .text-secondary,
+    .product-sub-title,
+    .p-s-d{
+        font-size: 14px;
+    }
+
+    .fs-p-p-d,
+    .fs-p-d-d{
+        font-size: 24px;
+    }
+
+    .p-add-card{
+        width: 100%;
+        padding: 14px;
+        font-size: 15px;
+    }
+}
