@@ -27,20 +27,20 @@
     </div>
 
 <!-- navbar-->
-<header class="py-3 border-bottom">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg p-0">
-            <button class="navbar-toggler border-0 shadow-none p-0 me-2"
+<header class="py-3 ">
+    <div class="container ">
+        <nav class="navbar navbar-expand-lg p-0  border-bottom">
+            <button class="navbar-toggler border-0 shadow-none p-0 me-2 mb-3"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarMenu">
 
                 <i class="bi bi-list fs-2"></i>
             </button>
-            <a class="navbar-brand fw-bold fs-2 me-4" href="#">
+            <a class="navbar-brand fw-bold fs-2 me-4 mb-3" href="#">
                 SHOP.CO
             </a>
-            <div class="d-flex d-lg-none ms-auto align-items-center gap-3">
+            <div class="d-flex d-lg-none ms-auto align-items-center gap-3 mb-3">
                 <a href="#" class="text-dark">
                     <i class="bi bi-search fs-5"></i>
                 </a>
@@ -51,7 +51,7 @@
                     <i class="bi bi-person fs-5"></i>
                 </a>
             </div>
-            <div class="collapse navbar-collapse" id="navbarMenu">
+            <div class="collapse navbar-collapse mb-3" id="navbarMenu">
 
                 <ul class="navbar-nav ms-lg-4">
 
@@ -91,7 +91,7 @@
                             placeholder="Search for products...">
                     </div>
                 </form>
-                <div class="d-none d-lg-flex align-items-center gap-3">
+                <div class="d-none d-lg-flex align-items-center gap-3 ">
                     <a href="#" class="text-dark">
                         <i class="bi bi-cart3 fs-i"></i>
                     </a>
@@ -297,39 +297,48 @@
 
         </div>
         <div class="col-md-8">
-          <div class="d-flex justify-content-md-between gap-3 align-items-center mb-4">
-                <h2 class="fw-bold Casual mb-0">Casual</h2>
+         <div class="d-flex justify-content-between align-items-center flex-nowrap mb-4">
 
-                <div class="d-flex align-items-center">
-                    <p class="mb-0 text-muted">
-                        Showing 1-10 of 100 Products
-                    </p>
+    <h2 class="fw-bold Casual mb-0 text-nowrap">
+        Casual
+    </h2>
 
-                    <div class="dropdown  d-none d-md-block">
-                        <button
-                            class="btn btn-light dropdown-toggle border-0"
-                            type="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Sort by: Most Popular
-                        </button>
+    <div class="d-flex align-items-center gap-2 flex-nowrap">
 
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Most Popular</a></li>
-                            <li><a class="dropdown-item" href="#">Newest</a></li>
-                            <li><a class="dropdown-item" href="#">Price: Low to High</a></li>
-                            <li><a class="dropdown-item" href="#">Price: High to Low</a></li>
-                        </ul>
-                    </div>
-                   <i class="bi bi-sliders fs-4 d-block d-md-none"
-                        role="button"
-                        data-bs-toggle="modal"
-data-bs-target="#filterModal"
-                        aria-expanded="false"
-                        aria-controls="filterSidebar">
-                    </i>
-                </div>
-            </div>
+        <p class="mb-0 text-muted text-nowrap">
+            Showing 1-10 of 100 Products
+        </p>
+
+
+        <div class="dropdown d-none d-md-block">
+            <button class="btn btn-light dropdown-toggle border-0"
+                    type="button"
+                    data-bs-toggle="dropdown">
+                Sort by: Most Popular
+            </button>
+
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Most Popular</a></li>
+                <li><a class="dropdown-item" href="#">Newest</a></li>
+                <li><a class="dropdown-item" href="#">Price: Low to High</a></li>
+                <li><a class="dropdown-item" href="#">Price: High to Low</a></li>
+            </ul>
+        </div>
+
+
+        <i class="bi bi-sliders fs-5 d-block d-md-none rounded-circle text-center flex-shrink-0"
+           style="
+                width: 32px;
+                height: 32px;
+                line-height: 32px;
+                background: #f0f0f0;
+           "
+           role="button"
+           data-bs-toggle="modal"
+           data-bs-target="#filterModal">
+        </i>
+    </div>
+</div>
             <div class="row border-bottom">
             <div class="col-6 col-md-4 ">
                 <div class="card border-0 bg-transparent">
