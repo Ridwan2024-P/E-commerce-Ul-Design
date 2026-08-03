@@ -546,7 +546,7 @@ border: 1px solid #0000001A;
 .splide__slide:not(.is-visible){
     filter: blur(4px);
 }
-@media (max-width: 768px){
+@media (max-width: 992px){
 
     .slider-overflow{
         width: 100%;
