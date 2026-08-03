@@ -903,18 +903,32 @@ document.querySelectorAll(".next-mobile").forEach(function(btn) {
 
 
   <!-- newsletter -->
-  <div class="newsletter-wrap container">
+ <div class="newsletter-wrap container">
     <div class="newsletter">
-      <h2 class="col-md-6">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
-      <div class="newsletter-form">
-        <div class="newsletter-input">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="black" stroke-width="2"/><path d="M3 7l9 6 9-6" stroke="black" stroke-width="2"/></svg>
-          <input type="email" placeholder="Enter your email address">
-        </div>
-        <a href="#" class="btn-black">Subscribe to Newsletter</a>
-      </div>
+        <h2 class="col-md-6">
+            STAY UPTO DATE ABOUT OUR LATEST OFFERS
+        </h2>
+        <form class="newsletter-form" id="newsletterForm">
+            <div class="newsletter-input">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                    <rect x="3" y="5" width="18" height="14" rx="2"
+                        stroke="black" stroke-width="2" />
+                    <path d="M3 7l9 6 9-6"
+                        stroke="black" stroke-width="2" />
+                </svg>
+                <input
+                    type="email"
+                    id="newsletterEmail"
+                    placeholder="Enter your email address"
+                    required
+                >
+            </div>
+            <button type="submit" class="btn-black">
+                Subscribe to Newsletter
+            </button>
+        </form>
     </div>
-  </div>
+</div>
 <style>
    .gy-5 {
     --bs-gutter-y: 10rem;
