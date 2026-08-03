@@ -766,6 +766,9 @@ footer {
     background: #000;
     color: #fff !important;
 }
+.social-icons a:hover i {
+    color: #fff !important;
+}
 .footer-title {
     font-family: Satoshi;
     font-weight: 500;
